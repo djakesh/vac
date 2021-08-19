@@ -115,3 +115,5 @@ AUTH_USER_MODEL = 'job.company'
 LOGIN_REDIRECT_URL = 'company'
 
 LOGIN_URL = 'login'
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
