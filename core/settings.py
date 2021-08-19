@@ -7,7 +7,7 @@ SECRET_KEY = 'django-insecure-2-x)k+hk%=(-4cv@wj&am3kmwbwpi-@$n@e0^9_l*%-_hb&8hn
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', '']
+ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1', 'calm-citadel-60742.herokuapp.com']
 
 
 INSTALLED_APPS = [
@@ -57,8 +57,12 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd13de9nk079c3v',
+        'HOST': 'ec2-52-3-130-181.compute-1.amazonaws.com',
+        'PORT': 5432,
+        'USER': 'jiuccxxrhdfqec',
+        'PASSWORD': '3dd41b14f6af0090318eeefa180fa1c2b6ef134fa33a7443e3ff7da556d25828'
     }
 }
 
